@@ -1,0 +1,29 @@
+{
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "bin": "./bin",
+  "bugs": {
+    "url": "https://github.com/tallesl/encoding-fix/issues"
+  },
+  "description": "recursively changes the encoding of files",
+  "homepage": "https://github.com/tallesl/encoding-fix",
+  "keywords": [
+    "encoding",
+    "file",
+    "fix",
+    "recursive"
+  ],
+  "license": "ISC",
+  "name": "encoding-fix",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/encoding-fix.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "iconv-lite": "^0.4.4",
+    "minimist": "^1.1.0"
+  }
+}
