@@ -1,6 +1,6 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": "./bin",
+  "bin": "./bin/encoding-fix",
   "bugs": {
     "url": "https://github.com/tallesl/encoding-fix/issues"
   },

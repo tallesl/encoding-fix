@@ -1,0 +1,5 @@
+#! /usr/bin/env node
+var args = require('../lib/args')()
+
+if (args) require('../lib/convert')(args)
+else process.exit(2)
