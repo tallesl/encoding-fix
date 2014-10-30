@@ -1,0 +1,27 @@
+.TH encoding-fix 7
+
+.SH NAME
+encoding-fix \- changes the encoding of the given file or directory
+
+.SH SYNOPSIS
+\fBencoding-fix\fP \fIFILES\fP... \fB--from\fP \fIENCODING\fP \fB--to\fP \fIENCODING\fP [\fB--ext\fP \fIEXTENSION\fP] [\fB--verbose\fP]
+
+.SH DESCRIPTION
+Changes the encoding of the given file or directory.
+Works recursively if a directory is specified.
+.br
+For supported encodings head to https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings.
+
+\fB--from\fP    the current encoding of the file(s)
+
+\fB--to\fP      the new encoding
+
+\fB--ext\fP     converts only encoding of files with the provided extension
+
+\fB--verbose\fP outputs each conversion to stdout
+
+.SH BUGS
+https://github.com/tallesl/encoding-fix/issues
+
+.SH AUTHOR
+Talles L <talleslasmar@gmail.com>

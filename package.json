@@ -9,6 +9,10 @@
     "minimist": "^1.1.0"
   },
   "description": "recursively changes the encoding of files",
+  "directories": {
+    "lib": "./lib",
+    "man": "./man"
+  },
   "homepage": "https://github.com/tallesl/encoding-fix",
   "keywords": [
     "encoding",
