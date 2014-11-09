@@ -1,6 +1,6 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": "./bin/encoding-fix",
+  "bin": "./bin/encoding-fix.js",
   "bugs": {
     "url": "https://github.com/tallesl/encoding-fix/issues"
   },
@@ -10,6 +10,7 @@
   },
   "description": "recursively changes the encoding of files",
   "directories": {
+    "bin": "./bin",
     "lib": "./lib",
     "man": "./man"
   },
@@ -20,7 +21,7 @@
     "fix",
     "recursive"
   ],
-  "license": "ISC",
+  "license": "Fair",
   "name": "encoding-fix",
   "preferGlobal": true,
   "repository": {
@@ -32,3 +33,4 @@
   },
   "version": "1.0.1"
 }
+

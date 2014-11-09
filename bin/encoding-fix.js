@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 var argv = require('minimist')(process.argv.slice(2))
   , checkArgs = require('../lib/check-args')
   , version = require('../package.json').version
@@ -12,3 +13,4 @@ if (argv.help) console.log(help)
 else if (argv.version) console.log(version)
 else if (checkArgs(argv)) require('../lib/convert')(argv)
 else process.exit(2)
+
