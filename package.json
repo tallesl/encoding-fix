@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "iconv-lite": "^0.4.4",
-    "minimisty": "^1.0.2",
+    "minimisty": "^1.0.3",
     "recursive-files": "^1.0.0"
   },
   "description": "recursively changes the encoding of files",
@@ -34,3 +34,4 @@
   },
   "version": "1.0.3"
 }
+
