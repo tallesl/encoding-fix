@@ -1,13 +1,9 @@
 #! /usr/bin/env node
 
-var argv = require('minimist')(process.argv.slice(2))
+var argv = require('minimisty')
   , checkArgs = require('../lib/check-args')
-  , version = require('../package.json').version
-
-var help = '\
-Changes the encoding of the given file or directory. \
-Works recursively if a directory is specified.\n\
-Use "--from" and "--to" to specify the encoding. For supported encodings head to https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings.'
+  , help = require('../lib/help')
+  , version = require('../lib/version')
 
 if (argv.help) console.log(help)
 else if (argv.version) console.log(version)
