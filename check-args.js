@@ -1,7 +1,7 @@
-var iconv = require('iconv-lite')
+const iconv = require('iconv-lite')
 
-module.exports = function (argv) {
-  var ok = true
+module.exports = (argv) => {
+  let ok = true
 
   if (!argv._.length) {
     console.error('No file/directory was specified!')
@@ -12,7 +12,7 @@ module.exports = function (argv) {
     console.error('Specify current encoding with --from')
     ok = false
   } else if (!iconv.encodingExists(argv.from)) {
-    console.error('Encoding not recognized: ' + argv.from + '.')
+    console.error(`Encoding not recognized: ${argv.from}.`)
     ok = false
   }
 
@@ -20,7 +20,7 @@ module.exports = function (argv) {
     console.error('Specify the new encoding with --to')
     ok = false
   } else if (!iconv.encodingExists(argv.to)) {
-    console.error('Encoding not recognized: ' + argv.to + '.')
+    console.error(`Encoding not recognized: ${argv.to}.`)
     ok = false
   }
 
@@ -30,4 +30,3 @@ module.exports = function (argv) {
 
   return ok
 }
-

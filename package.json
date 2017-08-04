@@ -1,21 +1,18 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": "./bin/encoding-fix.js",
+  "bin": "./index.js",
   "bugs": {
-    "url": "https://github.com/tallesl/encoding-fix/issues"
+    "url": "https://github.com/tallesl/node-encoding-fix/issues"
   },
   "dependencies": {
-    "iconv-lite": "^0.4.4",
-    "minimisty": "^1.0.3",
-    "recursive-files": "^1.0.0"
+    "iconv-lite": "^0.4.18",
+    "minimisty": "^1.1.1",
+    "recursive-files": "^1.0.2"
   },
-  "description": "recursively changes the encoding of files",
-  "directories": {
-    "bin": "./bin",
-    "lib": "./lib",
-    "man": "./man"
+  "description": "Recursively changes the encoding of files.",
+  "devDependencies": {
+    "standard": "^10.0.2"
   },
-  "homepage": "https://github.com/tallesl/encoding-fix",
   "keywords": [
     "encoding",
     "file",
@@ -27,11 +24,10 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/tallesl/encoding-fix.git"
+    "url": "https://github.com/tallesl/node-encoding-fix.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "version": "1.0.4"
 }
-
